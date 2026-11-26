@@ -197,7 +197,8 @@ function initCounters() {
 // ========== Фильтр портфолио ==========
 function initPortfolioFilter() {
   const buttons = document.querySelectorAll('.filter-btn');
-  const items = document.querySelectorAll('.portfolio-item');
+  // Фильтр управляет и карточками проектов, и блоком «Каталог лендингов»
+  const items = document.querySelectorAll('.portfolio-item, .landing-catalog');
 
   buttons.forEach(btn => {
     btn.addEventListener('click', () => {
